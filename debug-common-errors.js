@@ -24,9 +24,9 @@ Think about which debugging methods you found most useful and how you might appl
 // Description:
 // This program is intended to display a simple prompt in the console but fails to run.
 
-console.log("Welcome to the bootcamp
+console.log("Welcome to the bootcamp");
 
-// What’s Wrong?
+// What’s Wrong? //Syntax Error:Missing a outer quote and parenthesis
 
 
 // Program B
@@ -39,7 +39,7 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(doubled);
 }
 
-// What’s Wrong?
+// What’s Wrong?//Runtime error: attempts to run an invalid operation
 
 
 
@@ -51,12 +51,12 @@ function isPrime(num) {
   if (num < 2) return false;
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
-      return true;  // Supposed to indicate num is NOT prime
+      return false;  // Supposed to indicate num is NOT prime
     }
   }
-  return false; // Supposed to indicate num IS prime
+  return true; // Supposed to indicate num IS prime
 }
 
 console.log(isPrime(7)); // Expected true but gets false
 
-// What’s Wrong?
+// What’s Wrong? //Logical error true and false statements at bottome were swapped
